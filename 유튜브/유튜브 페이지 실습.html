@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유튜브 페이지</title>
+    <script src="https://kit.fontawesome.com/46ebd75e55.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 60px;
+        }
+
+        figure > img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .video_player > img {
+           
+        }
+
+
+        .channel > img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .related_video {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .related_video_img {
+            width: 120px;
+            height: 70px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="logo">YouTube</h1>
+        <div class="search_box">
+            <input type="text" placeholder="검색">
+            <!-- 키보드 아이콘 -->
+            <i class="fa-solid fa-keyboard fa-xl"></i>
+            <!-- 돋보기 아이콘 -->
+            <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+        </div>
+        <div class="icons">
+            <!-- 마이크 아이콘 -->
+            <i class="fa-solid fa-microphone fa-xl"></i>
+            <!-- 벨 아이콘 -->
+            <i class="fa-regular fa-bell"></i>
+        </div>
+        <figure>
+            <img src="./유튜브 프로필.jpg" alt="">
+        </figure>
+    </header>
+
+    <main class="main_content">
+        
+        <section class="video_section">
+            <div class="video_player">
+              <img src="./유튜브페이지2.jpg" alt="">
+            </div>
+            <div class="video_content">
+                <h2>Playlist | 어서오세요 듣기만 해도 기분 좋아지는 재즈가 흐르는 뉴욕으로</h2>
+                <div class="channel">
+                    <img src="./유튜브 프로필.jpg" alt="채널">
+                    <div>
+                        <h3>Jazzne | 기분Jazz네</h3>
+                        <span>구독자 30.5만명</span>
+                    </div>
+                    <button>가입</button>
+                    <button>구독</button>
+                </div>
+                <div class="video_icon">
+                    <button>
+                        <!-- 좋아요  -->
+                        <i class="fa-regular fa-thumbs-up"></i>
+                        7.4천
+                    </button>
+                    <button>
+                        <!-- 싫어요 -->
+                          <i class="fa-regular fa-thumbs-down"></i>
+                    </button>
+                    <button>
+                        <!-- 공유 -->
+                        <i class="fa-solid fa-share"></i>
+                        공유
+                    </button>
+                    <button>
+                        <!-- 점점점 -->
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </button>
+                </div>
+                <div class="video_explain">
+                    <p>
+                        <strong>조회수 120만회 1년전</strong>
+                        <br>
+                        모든 음원은 직접 작곡 또는 편곡 및 연주한 음원이에요.
+                        <br>
+                        더 좋은 새로운 음악을 만나보고 싶다면 구독과 좋아요를 눌러주세요.
+                        <br>
+                        "기분 Jazz네"의 모든 음원은 본 채널 외 무단으로 사용 불가함을 알려드립니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="comment_box">
+            <h3>댓글 137개</h3>
+            <select name="line_up" id="line_up" class="line_select">
+                <option value="standard">정렬 기준</option>
+                <option value="popularity">인기 댓글순</option>
+                <option value="newest">최신순</option>
+            </select>
+            <div class="write_box">
+                <figure>
+                    <img src="./유튜브 프로필.jpg" alt="">
+                </figure>
+                <span>댓글 추가</span>
+            </div>
+            <div class="comment">
+                <figure>
+                    <img src="./유튜브 프로필.jpg" alt="">
+                </figure>
+                <h2>@nickname</h2>
+                <p class="comment_content">이 글을 읽고 계신 모든 분들께, 여러분의 웃음이 누군가에게는 큰 선물입니다. 오늘도 미소를 잃지 마세요!
+                </p>
+            </div>
+            <div class="comment_icon">
+                <button>
+                    <!-- 좋아요 -->
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    331
+                </button>
+                <button>
+                    <!-- 싫어요 -->
+                    <i class="fa-regular fa-thumbs-down"></i>
+                </button>
+                
+                <figure>
+                    <img src="./유튜브 프로필.jpg" alt="">
+                </figure>
+
+                <p>답글</p>
+                
+            </div>
+        </section>
+    </main>
+
+    <aside>
+        <div class="related_video">
+            <div class="related_video_img">
+                <img src="./관련영상img.jpg" alt="">
+            </div>
+            <h3>
+                Playlist | 픽사,재즈
+            </h3>
+            <span>
+                Sweet Melody 달콤한 멜로디
+                <br>
+                조회수 198만회 1년 전
+            </span>
+        </div>
+        
+        <div class="related_video">
+            <div class="related_video_img">
+                <img src="./관련영상img.jpg" alt="">
+            </div>
+            <h3>
+                Playlist | 픽사,재즈
+            </h3>
+            <span>
+                Sweet Melody 달콤한 멜로디
+                <br>
+                조회수 198만회 1년 전
+            </span>
+        </div>
+    </aside>
+</body>
+</html>
