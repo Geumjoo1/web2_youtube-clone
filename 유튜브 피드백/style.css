@@ -104,6 +104,7 @@ button {
 .main_video > iframe {
     border: 16px;
     width: 100%;
+    border-radius: 12px;
 }
 
 .video_info {
@@ -154,7 +155,6 @@ button {
 
 .view_box {
     gap: 16px;
-
 }
 
 
@@ -296,17 +296,26 @@ button {
 
 .side_video_text {
     width: 100%;
+    
 }
 
 .side_video_text > p {
     font-size: 14px;
     line-height: 20px;
-    color: #929292;
+    color: #5c5c5c;
+    margin: 8px 0;
+}
+
+.view_text {
+    font-size: 14px;
+    line-height: 20px;
+    color: #5c5c5c;
 }
 
 .side_img {
     border-radius: 8px;
-    /* width: 30px;
-    height: 20px; */
+    width: 100%;
+    height: 100%;
+   
 }
 /* aside 끝 */
